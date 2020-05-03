@@ -5,4 +5,4 @@ shell.run("writetape","left","https://raw.githubusercontent.com/KingSername/text
 shell.run("clear")
 shell.run("tape","setspeed","2")
 shell.run("tape","label",(msg))
-shell.run("tape","silence","left")
+
