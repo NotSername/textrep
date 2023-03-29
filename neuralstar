@@ -4,7 +4,7 @@ local canvas = peripheral.wrap("back").canvas()
 
 local function start()
    group = canvas.addGroup({ 0, 0 })
-   area = group.addRectangle(0, 0, 600, 300, 0xFF000064)
+   area = group.addRectangle(0, 0, 164, 81, 0xFF000064)
 return group
   end
 
