@@ -40,8 +40,9 @@ while not bFinished do
 	end
 
 	-- Get this every frame incase the monitor resizes	
-	local w,h = area.getSize()
-	local startX = math.floor( (w - 65) / 2 )-100
+	local w = 164
+	local h = 81
+	local startX = math.floor( (w - 65) / 2 )
 	local startY = math.floor( (h - 14) / 2 )
 
 	-- Print the frame
