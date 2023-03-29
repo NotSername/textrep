@@ -51,7 +51,7 @@ while not bFinished do
 	for n=1,13 do
 		local line = it()
 		if line then
-			  local name = group.addText({ startX, startY+n*5 }, line) name.setScale(1)
+		--	  local name = group.addText({ startX, startY+n*5 }, line) name.setScale(0.5)
 		else
 			bFinished = true
 			break
