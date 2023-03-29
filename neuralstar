@@ -4,7 +4,7 @@ local canvas = peripheral.wrap("back").canvas()
 
 local function start()
    group = canvas.addGroup({ 0, 0 })
-   area = group.addRectangle(0, 0, 300, 300, 0xFF000064)
+   area = group.addRectangle(0, 0, 600, 300, 0xFF000000)
 return group
   end
 
@@ -50,7 +50,7 @@ while not bFinished do
 	for n=1,13 do
 		local line = it()
 		if line then
-			  local name = group.addText({ startX, startY+n }, line) name.setScale(0.5)
+			  local name = group.addText({ startX, startY+n*5 }, line) name.setScale(0.5)
 		else
 			bFinished = true
 			break
