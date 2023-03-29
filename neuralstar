@@ -4,7 +4,7 @@ local canvas = peripheral.wrap("back").canvas()
 
 local function start()
    group = canvas.addGroup({ 0, 0 })
-   area = group.addRectangle(0, 0, 600, 300, 0xFF000000)
+   area = group.addRectangle(0, 0, 600, 300, 0x00000000)
 return group
   end
 
@@ -41,7 +41,7 @@ while not bFinished do
 
 	-- Get this every frame incase the monitor resizes	
 	local w,h = area.getSize()
-	local startX = math.floor( (w - 65) / 2 )
+	local startX = math.floor( (w - 65) / 2 )-100
 	local startY = math.floor( (h - 14) / 2 )
 
 	-- Print the frame
